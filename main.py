@@ -35,11 +35,12 @@ def dessine(nombre_ligne):
 
 
 if __name__ == '__main__':
+    nombre_lignes = int(input("Combien de ligne voulez-vous afficher ? : "))
     fen = turtle.Screen()
     tortue = turtle.Turtle()
     tortue.penup()
     tortue.sety(270)
     tortue.pendown()
     tortue.speed(1000)
-    dessine(20)
+    dessine(nombre_lignes)
     fen.exitonclick()
